@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "culturaldelights:tortilla"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:beef_burrito"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        },
+        {
+          "tag": "c:cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        },
+        {
+          "item": "farmersdelight:cooked_rice"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        },
+        {
+          "tag": "culturaldelights:avocados"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_beef_burrito"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_beef_burrito"
+  }
+}

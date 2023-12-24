@@ -1,0 +1,119 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:exotic_roll_medley"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:chicken_roll_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:chicken_roll_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:tropical_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:tropical_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:pufferfish_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        },
+        {
+          "item": "culturaldelights:pufferfish_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_exotic_roll_medley"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_exotic_roll_medley"
+  }
+}

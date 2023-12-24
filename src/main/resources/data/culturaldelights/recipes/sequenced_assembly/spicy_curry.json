@@ -1,0 +1,104 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelight:tomato_sauce"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:spicy_curry"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        },
+        {
+          "item": "farmersdelight:cooked_rice"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        },
+        {
+          "tag": "c:cooked_chicken"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        },
+        {
+          "item": "farmersdelight:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        },
+        {
+          "item": "minecraft:blaze_powder"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        },
+        {
+          "fluidTag": "c:milk",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_spicy_curry"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_spicy_curry"
+  }
+}

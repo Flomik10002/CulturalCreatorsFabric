@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "culturaldelights:corn_cob"
+    },
+    {
+      "item": "culturaldelights:corn_cob"
+    },
+    {
+      "amount": 40500,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "item": "culturaldelights:corn_dough",
+      "count": 4
+    }
+  ]
+}

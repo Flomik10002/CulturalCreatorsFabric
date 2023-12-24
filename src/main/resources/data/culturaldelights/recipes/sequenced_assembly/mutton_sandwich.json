@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:mutton_sandwich"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        },
+        {
+          "tag": "c:cooked_mutton"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        },
+        {
+          "item": "farmersdelight:fried_egg"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        },
+        {
+          "item": "minecraft:beetroot"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_mutton_sandwich"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_mutton_sandwich"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "culturaldelights:tortilla"
+    }
+  ],
+  "results": [
+    {
+      "item": "culturaldelights:tortilla_chips",
+      "count": 4
+    }
+  ]
+}

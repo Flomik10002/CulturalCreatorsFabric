@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "culturaldelights:tortilla"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:fish_taco"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        },
+        {
+          "tag": "c:cooked_fishes"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        },
+        {
+          "tag": "c:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        },
+        {
+          "item": "farmersdelight:tomato"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_fish_taco"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_fish_taco"
+  }
+}

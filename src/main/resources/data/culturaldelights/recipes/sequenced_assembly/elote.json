@@ -1,0 +1,56 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:stick"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:elote"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_elote"
+        },
+        {
+          "item": "culturaldelights:smoked_corn"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_elote"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_elote"
+        },
+        {
+          "fluidTag": "c:milk",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_elote"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_elote"
+  }
+}

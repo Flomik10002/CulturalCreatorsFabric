@@ -3,27 +3,31 @@
 	"id": "culturalcreators",
 	"version": "${version}",
 	"name": "Cultural Creators",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Making automation between Culturals Delight and Create",
 	"authors": [
-		"Me!"
+		"Flomik"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Flomik10002/CulturalCreatorsFabric",
+		"sources": "https://github.com/Flomik10002/CulturalCreatorsFabric",
+		"issues": "https://github.com/Flomik10002/CulturalCreatorsFabric/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/culturalcreators/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"flomik.culturalcreators.CulturalCreators"
+			"flomik.culturalcreators.CulturalCreatorsMod"
+		],
+		"client": [
+			"flomik.culturalcreators.CulturalCreatorsModClient"
 		]
 	},
 	"mixins": [
 		"culturalcreators.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.3",
+		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"

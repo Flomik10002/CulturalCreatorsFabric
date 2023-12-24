@@ -1,0 +1,87 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:hearty_salad"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        },
+        {
+          "item": "farmersdelight:tomato"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        },
+        {
+          "item": "culturaldelights:cucumber"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        },
+        {
+          "tag": "culturaldelights:avocados"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        },
+        {
+          "item": "culturaldelights:corn_cob"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_hearty_salad"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_hearty_salad"
+  }
+}

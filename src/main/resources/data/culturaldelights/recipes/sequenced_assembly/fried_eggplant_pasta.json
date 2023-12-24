@@ -1,0 +1,56 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "culturaldelights"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "delightfulcreators:incomplete_pasta_dish"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "culturaldelights:fried_eggplant_pasta"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_fried_eggplant_pasta"
+        },
+        {
+          "tag": "culturaldelights:regular_eggplants"
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_fried_eggplant_pasta"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "culturalcreators:incomplete_fried_eggplant_pasta"
+        },
+        {
+          "fluid": "delightfulcreators:tomato_sauce",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "culturalcreators:incomplete_fried_eggplant_pasta"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "culturalcreators:incomplete_fried_eggplant_pasta"
+  }
+}
