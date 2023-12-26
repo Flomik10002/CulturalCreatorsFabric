@@ -13,8 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemsGroup {
     public static final ItemGroup MAIN = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(CulturalCreatorsMod.MOD_ID, "main"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.main"))
+            new Identifier(CulturalCreatorsMod.MOD_ID, "culturd"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.culturd"))
                     .icon(() -> new ItemStack(ModItemsRegister.INCOMPLETE_ELOTE)).entries((displayContext, entries) -> {
                         entries.add(ModItemsRegister.INCOMPLETE_ELOTE);
                         entries.add(ModItemsRegister.INCOMPLETE_BEEF_BURRITO);

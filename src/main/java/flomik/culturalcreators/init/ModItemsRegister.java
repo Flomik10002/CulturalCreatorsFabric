@@ -33,7 +33,6 @@ public class ModItemsRegister {
     public static final Item INCOMPLETE_EXOTIC_ROLL_MEDLEY = registerItem("incomplete_exotic_roll_medley",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
 
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(CulturalCreatorsMod.MOD_ID, name), item);
     }
