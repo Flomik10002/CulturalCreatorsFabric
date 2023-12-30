@@ -13,8 +13,8 @@ public class CulturalCreatorsModClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_CREAMED_CORN, ModFluidsRegister.FLOWING_CREAMED_CORN, new SimpleFluidRenderHandler(
-                new Identifier("delightfulcreators:block/creamed_corn_still"),
-                new Identifier("delightfulcreators:block/creamed_corn_flow")
+                new Identifier("culturalcreators:block/creamed_corn_still"),
+                new Identifier("culturalcreators:block/creamed_corn_flow")
         ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_CREAMED_CORN, ModFluidsRegister.FLOWING_CREAMED_CORN);
