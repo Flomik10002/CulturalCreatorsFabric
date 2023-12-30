@@ -28,7 +28,7 @@ public class ModFluidsRegister {
 
     public static void register() {
         STILL_CREAMED_CORN = Registry.register(Registries.FLUID,
-                new Identifier(CulturalCreatorsMod.MOD_ID, "creamed_corn_block.json"), new CreamedCornFluid.Still());
+                new Identifier(CulturalCreatorsMod.MOD_ID, "creamed_corn"), new CreamedCornFluid.Still());
         FLOWING_CREAMED_CORN = Registry.register(Registries.FLUID,
                 new Identifier(CulturalCreatorsMod.MOD_ID, "flowing_creamed_corn"), new CreamedCornFluid.Flowing());
         CREAMED_CORN_BLOCK = Registry.register(Registries.BLOCK, new Identifier(CulturalCreatorsMod.MOD_ID, "creamed_corn_block"),
